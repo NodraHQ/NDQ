@@ -1,0 +1,23 @@
+button {
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: .2s;
+}
+
+button:hover {
+
+    background: #6366f1;
+}

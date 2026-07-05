@@ -1,0 +1,70 @@
+@import "../styles/colors.css";
+
+.home {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+}
+
+.menu {
+  width: 340px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  background: rgba(10, 10, 15, 0.75);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  backdrop-filter: blur(8px);
+
+  border-radius: 18px;
+
+  padding: 40px;
+
+  pointer-events: all;
+}
+
+.menu h1{
+    text-align:center;
+    font-size:56px;
+}
+
+.menu button{
+
+    height:52px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.2s;
+}
+
+.menu button:hover{
+
+    background:var(--primary-hover);
+}
+
+.menu span{
+
+    text-align:center;
+
+    opacity:.5;
+
+    font-size:14px;
+}
