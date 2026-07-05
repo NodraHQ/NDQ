@@ -1,5 +1,7 @@
 import Phaser from "phaser";
+
 import { BootScene } from "../scenes/BootScene";
+import { MenuScene } from "../scenes/MenuScene";
 
 export function startGame(parent: string) {
   return new Phaser.Game({
@@ -12,7 +14,7 @@ export function startGame(parent: string) {
 
     backgroundColor: "#1e293b",
 
-    scene: [BootScene],
+    scene: [BootScene, MenuScene],
 
     scale: {
       mode: Phaser.Scale.RESIZE,

@@ -1,0 +1,49 @@
+.city{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.player-card{
+
+    width:420px;
+
+    min-height:500px;
+
+    background:rgba(15,15,20,.8);
+
+    border-radius:18px;
+
+    padding:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.avatar{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:#444;
+
+    align-self:center;
+
+}
