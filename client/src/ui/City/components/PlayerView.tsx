@@ -1,8 +1,11 @@
 import "./PlayerView.css";
 
-import { player } from "../../../services/player";
+import { usePlayer } from "../../../state/PlayerContext";
 
 export default function PlayerView() {
+  const { player, getEquippedWeapon, getEquippedArmor } = usePlayer();
+  const weapon = getEquippedWeapon();
+  const armor = getEquippedArmor();
   return (
     <section className="player-view">
       <div className="character">
@@ -26,15 +29,15 @@ export default function PlayerView() {
         </p>
 
         <p>
-          <strong>Classe:</strong> {player.className}
+          <strong>Classe:</strong> {player.class}
         </p>
 
         <p>
-          <strong>Espada:</strong> {player.weapon}
+          <strong>Arma:</strong> {weapon?.name ?? "Nenhuma"}
         </p>
 
         <p>
-          <strong>Armadura:</strong> {player.armor}
+          <strong>Armadura:</strong> {armor?.name ?? "Nenhuma"}
         </p>
 
         <p>
@@ -48,8 +51,4 @@ export default function PlayerView() {
       </div>
     </section>
   );
-}git add .
-
-git commit -m "feat(player): create player model"
-
-git push
+}

@@ -1,0 +1,77 @@
+@import "../../styles/colors.css";
+
+.item-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  background: rgba(15, 15, 20, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 14px 10px 10px;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-2px);
+  background: rgba(25, 25, 32, 0.9);
+}
+
+.item-card--selected {
+  background: rgba(79, 70, 229, 0.25);
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.item-card--equipped {
+  background: rgba(95, 208, 122, 0.12);
+}
+
+.item-card__name {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.item-card__meta {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.item-card__equipped-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  background: #5fd07a;
+  color: #0d0b1a;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.item-card__broken-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 9px;
+  font-weight: bold;
+  background: #e0505e;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.item-card__locked-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 12px;
+  opacity: 0.7;
+}

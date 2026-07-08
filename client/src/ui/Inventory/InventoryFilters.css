@@ -1,0 +1,53 @@
+@import "../../styles/colors.css";
+
+.inventory-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.inventory-filters__slots {
+  display: flex;
+  gap: 8px;
+}
+
+.inventory-filters__pill {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.inventory-filters__pill:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.inventory-filters__pill--active {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.inventory-filters__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.inventory-filters__count {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.inventory-filters__sort {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+}

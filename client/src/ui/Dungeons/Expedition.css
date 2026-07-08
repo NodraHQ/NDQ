@@ -1,0 +1,51 @@
+@import "../../styles/colors.css";
+
+.expedition-screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px;
+  max-width: 560px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.expedition-screen h2 {
+  font-size: 26px;
+  text-align: center;
+}
+
+.expedition-log {
+  background: rgba(10, 10, 15, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px 18px;
+  height: 180px;
+  overflow-y: auto;
+  font-size: 15px;
+}
+.expedition-log div {
+  margin-bottom: 6px;
+  opacity: 0.85;
+}
+
+.progress-outer {
+  width: 100%;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.progress-inner {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--primary-hover));
+  transition: width 0.2s linear;
+}
+
+.expedition-hint {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.5;
+}

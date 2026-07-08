@@ -1,0 +1,67 @@
+@import "../../styles/colors.css";
+
+.dungeon-select {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.dungeon-select-header h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.dungeon-select-header p {
+  opacity: 0.7;
+  max-width: 520px;
+}
+
+.dungeon-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 640px;
+}
+
+.dungeon-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+  background: rgba(15, 15, 20, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 16px 20px;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+  transition: 0.15s ease;
+}
+.dungeon-card:hover {
+  transform: translateY(-2px);
+  background: rgba(25, 25, 32, 0.9);
+}
+
+.dungeon-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.dungeon-info h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.dungeon-info p {
+  font-size: 14px;
+  opacity: 0.75;
+  margin-bottom: 6px;
+}
+.dungeon-meta {
+  font-size: 12px;
+  opacity: 0.55;
+}

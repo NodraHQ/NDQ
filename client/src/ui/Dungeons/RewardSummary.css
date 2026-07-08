@@ -1,0 +1,77 @@
+@import "../../styles/colors.css";
+
+.reward-summary {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 40px;
+  text-align: center;
+}
+
+.reward-summary h2 {
+  font-size: 26px;
+}
+
+.reward-basic {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  color: #f4c95d;
+}
+
+.loot-card {
+  width: 200px;
+  background: #f4ecd8;
+  color: #1a1a2e;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.loot-card .rarity {
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-bottom: 4px;
+}
+
+.loot-card .item-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.loot-card .item-stat {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.reward-note {
+  max-width: 420px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 26px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 8px;
+}
+.primary-btn:hover {
+  background: var(--primary-hover);
+}
